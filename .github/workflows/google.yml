@@ -1,0 +1,6 @@
+
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+docker run -d -p 80:80 html-server-image:v1 
+CMD ["alphine", "welcome to website"]
+
